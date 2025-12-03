@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración de Botón Ir Arriba</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            padding: 20px;
+            width: 400px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #status {
+            margin-top: 10px;
+            color: green;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .description {
+            margin-bottom: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sitios Permitidos</h2>
+    <div class="description">
+        Ingresa los sitios donde quieres que aparezca el botón, uno por línea.
+        Puedes usar partes del dominio (ej: mercadolibre.com.ar).
+    </div>
+    <textarea id="allowed-sites" placeholder="ejemplo.com&#10;otro-sitio.org"></textarea>
+    <button id="save">Guardar</button>
+    <div id="status">Opciones guardadas.</div>
+    <script src="options.js"></script>
+</body>
+</html>
