@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Botón Ir Arriba",
+    "version": "1.0",
+    "description": "Agrega un botón para ir al inicio de la página.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "ir-arriba@utilidades",
+            "data_collection_permissions": {
+                "required": [
+                    "none"
+                ]
+            }
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.mercadolibre.com.ar/*"
+            ],
+            "js": [
+                "content-script.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
