@@ -3,6 +3,10 @@
     "name": "Botón Ir Arriba",
     "version": "1.1",
     "description": "Agrega un botón para ir al inicio de la página.",
+    "icons": {
+        "48": "icon.png",
+        "96": "icon.png"
+    },
     "browser_specific_settings": {
         "gecko": {
             "id": "ir-arriba@utilidades",
